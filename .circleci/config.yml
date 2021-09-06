@@ -4,12 +4,10 @@ version: 2.1
 orbs:
   # Declare a dependency on the welcome-orb
   welcome: circleci/welcome-orb@0.4.1
-  dbm-test2: dbm/dbm-test2@<<pipeline.parameters.dev-orb-version>>
+  dbm-test2: dbm/dbm-test2@0.0.1
 # Orchestrate or schedule a set of jobs
 workflows:
-  # Name the workflow "welcome"
   welcome:
-    # Run the welcome/run job in its own container
     jobs:
       - dbm-test: 
           docker:
@@ -18,10 +16,10 @@ workflows:
           - checkout
           - dbm-test2/download-automation-jar
           - dbm-test2/validate:
-            project_name: "CircleTest1"
-            environment_name: "Release Source"
-            package_name: "V0"
-            server_address: "35.239.85.41:7017"
-            auth_type: "DBmaestroAccount"
-            username: "test@dbmaestro.com"
-            password: "VcuLQPRaGKshEVhbrUEJsrJfJigTmQPB"
+              project_name: "CircleTest1"
+              environment_name: "Release Source"
+              package_name: "V0"
+              server_address: "35.239.85.41:7017"
+              auth_type: "DBmaestroAccount"
+              username: "test@dbmaestro.com"
+              password: "VcuLQPRaGKshEVhbrUEJsrJfJigTmQPB"
