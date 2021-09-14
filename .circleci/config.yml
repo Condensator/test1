@@ -3,7 +3,7 @@ version: 2.1
 orbs:
   # Declare a dependency on the welcome-orb
   welcome: circleci/welcome-orb@0.4.1
-  dbm-test2: dbm/dbm-test2@0.0.4
+  dbm-test2: dbm/dbm-test2@0.0.5
 # Orchestrate or schedule a set of jobs
 jobs:
   dbm-test: 
@@ -56,7 +56,7 @@ jobs:
             - dbm-test2/validate:
                 project_name: "CircleTest1"
                 environment_name: "Release Source"
-                package_name: "V0"
+                package_name: "V4"
                 server_address: "35.239.85.41:7017"
                 auth_type: "DBmaestroAccount"
                 username: "test@dbmaestro.com"                              
