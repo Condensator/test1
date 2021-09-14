@@ -79,7 +79,7 @@
     "IgnoreTableOptions": false,
     "UnmodifiableObjectWarnings": false,
     "IgnorePartitionSchemes": false,
-    "PreRunExternalTool": "Backup",
+    "PreRunExternalTool": "DacPac",
     "PreRunExpImpContentMode": "ALL",
     "DoNotAlterReplicatedObjects": true,
     "IgnoreUserSettingsObjects": false,
