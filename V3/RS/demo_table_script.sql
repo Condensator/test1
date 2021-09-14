@@ -5,7 +5,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[demo_Table](
+CREATE TABLE [dbo].[qdemo_Table](
 	[Column_pk] [char](10) NOT NULL,
 	[Columntwo] [numeric](18, 0) NULL,
 	[Descr] [nchar](10) NULL

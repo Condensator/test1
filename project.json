@@ -153,14 +153,14 @@
       "Name": "Dev",
       "Environments": [
         {
-          "EnvironmentId": 3,
+          "EnvironmentId": 30,
           "EnvironmentName": "Dev_Env_1",
           "EnvironmentDescription": null,
           "ComparisonType": null,
           "SuperUser": null,
           "Schemas": [
             {
-              "Name": "DEV",
+              "Name": "DEV_BYTASK",
               "SchemaCredentials": {
                 "password": "1q2w3e4R",
                 "dbName": "DEV_BYTASK",
@@ -191,7 +191,7 @@
           "SuperUser": null,
           "Schemas": [
             {
-              "Name": "RS",
+              "Name": "DR",
               "SchemaCredentials": {
                 "password": "1q2w3e4R",
                 "dbName": "DR",
@@ -214,14 +214,14 @@
       "Name": "Release Source",
       "Environments": [
         {
-          "EnvironmentId": 4,
+          "EnvironmentId": 45,
           "EnvironmentName": "Release Source",
           "EnvironmentDescription": null,
           "ComparisonType": null,
           "SuperUser": null,
           "Schemas": [
             {
-              "Name": "RS",
+              "Name": "RS_BYTASK",
               "SchemaCredentials": {
                 "password": "1q2w3e4R",
                 "dbName": "RS_BYTASK",
@@ -232,7 +232,7 @@
                 "vaultName": null
               },
               "Order": 1,
-              "SchemaId": 4,
+              "SchemaId": 45,
               "IsManaged": false,
               "IsSuperUser": false
             }
