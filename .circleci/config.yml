@@ -19,7 +19,6 @@ jobs:
                 server_address: "35.239.85.41:7017"
                 auth_type: "DBmaestroAccount"
                 username: "test@dbmaestro.com"
-                password: $DBM_PASSWORD
             - dbm-test2/create-manifest-file:
                 path_to_scripts_folder: "V3"
             - run: zip -r V3.zip V3/*
